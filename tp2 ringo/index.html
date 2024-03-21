@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<title>Le titre de ma page web</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Une description de la page..." />
+		<meta name="author" content="Nicolas AUNE" />
+		<meta name="copyright" content="© CC BY-NC-SA 4.0" />
+
+	</head>
+	<body>
+		<header>
+			<nav>
+				<h1>
+					TP Accessibilité gabarit, textes, tailles, couleurs et contraste
+				</h1>
+			</nav>
+		</header>
+		<main>
+			
+
+			<div>
+				<section>
+					<h2>
+						Intro
+					</h2>
+					<p>
+						Dans ce TP, il n'est question que de visuel, de permettre à l'internaute en déficience de pouvoir voir son contenu au plus prêt de l'UX attendue.
+
+Dans un autre TP, il s'agira de comprendre l'information, de pouvoir interagir avec.
+
+A l'aide de l'extension Wave, testez la page et corrigez la page point par point en suivant par exemple les règles proposées ci-dessous.
+					</p>
+					<a href="https://wave.webaim.org/" target="_blank">Télécharger l'extention Wave</a>
+					<p>Installer Wave sur le navigateur et activer Wave sur la page</p>
+				</section>
+				<section>
+					<h2>
+						Accessibilité de la page html
+					</h2>
+					<p>
+						Wave vous indiquera sûrement l'absence de titre, de langue, mais la sémantique de l'architecture de votre page, votre gabarit peut également impacter la lecture par assistant, le mode lecture simplifié proposé par les navigateurs, ...
+					</p>
+					<ol>
+						<li>Corriger les premières lignes html de la page signalées par Wave</li>
+						<li>Ne bloquer pas le zoom</li>
+						<li>Ne priver pas l'internaute de la neige</li>
+						<li>Reprenez l'architecture de la page</li>
+					</ol>
+					<p><a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/main">Aide Mozilla pour la structure html</a></p>
+					<p>
+					<a href="https://www.apprendre-html-et-css.com/les_balises_de_structure.html" target="_blank">Aide pour la structure html, header, nav, section, footer, ...</a></p>
+					<div>
+						<article>
+							<h2>
+								Accessibilité, lisibilité des textes
+							</h2>
+							<p>
+								Le texte doit être lisible, et son contenu répérable dans la page ce qui impose qu'il ne soit pas justifié, dans une police accessible sans sérif et avec un contraste/taille suffisant. On ne parlera dans ce TP que de la lisibilité du texte.
+
+Assurez-vous que la taille du texte est suffisante par un bon équilibrage entre la couleur de fond, du texte et la taille en modifiant le css associé.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+							<a href="https://toolness.github.io/accessible-color-matrix/?n=white&n=light&n=bright&n=medium&n=dark&n=black&v=FFFFFF&v=739AA4&v=00CFFF&v=095897&v=B10F82&v=6E0951" target="_blank">Aide pour le contraste/taille du texte</a>
+						</article>
+						<article>
+							<h2>
+								Accessibilité des images
+							</h2>
+							<p>
+								Toutes les images doivent avoir un attribut Alt même celles qui ne comportent pas d'information.
+
+								Les images disposent de plusieurs attributs pour porter l'information malgré leur non-affichage ou leur non perception par l'internaute :
+							</p>
+							<ul>
+								<li>Alt qui décrit l'image</li>
+								<li>Title pour apporter une information sur l'image, origine, lieu, ...</li>
+							</ul>
+							<p>Mais aussi des éléments html5 sont à envisager : figure et figcaption.
+
+								Modifier le code associée aux images ci-dessous pour les rendre accessibles.</p>
+								<img src="./WAI-Illustration-10783067_19198752.png" alt="illustration Accessibilité">
+								<p>Cette image décrit une personne en fauteuil qui tient une tablette devant une autre personne debout en lunette noire, avec en fond des écrans et des pictos d'accessibilité.
+
+									Cette image illustre l'accessibilité du numérique pour tous.</p>
+									<img src="./placehold.svg" alt="demo">
+									<p>Cette image donne une information, qui doit être reçue même si l'image ne s'affiche pas ou que l'internaute ne peut pas la voir.
+
+										Une infographie, elle, acceptera en accessibilité une description cachée, par un script ou un css, qui, parce que immédiatement positionnée à la suite de l'image sera considérée comme étant sa description associée.
+										
+										Attention, on trouve encore des tutos avec l'attribut longdesc pour des descriptions longues associées parfois pas des fichiers externes html ou txt, cela n'est plus pris en charge par les navigateurs.</p>
+										<a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank">Aide Mozilla pour la gestion des images</a>
+										<p>Vous pouvez tester votre page avant-après en désactivant les images, le style, ... avec Webdeveloppeur</p>
+										<p>Vous pouvez tester votre page avant-après en utilisant lighthouse et Chromelens via Inspecter</p>
+						</article>
+					</div>
+				</section>
+			</div>
+			<aside>
+				<ul>
+					<li><a href="https://developer.mozilla.org/fr/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML" target="_blank">Guide pour les images</a></li>
+					<li><a href="https://toolness.github.io/accessible-color-matrix/?n=white&n=light&n=bright&n=medium&n=dark&n=black&v=FFFFFF&v=739AA4&v=00CFFF&v=095897&v=B10F82&v=6E0951" target="_blank">Contrôler le contraste</a></li>
+				</ul>
+				<p class="freepik"><a href="http://klaksa.free.fr/web/tp/wai001/www.freepik.com" target="_blank">Source des images de Freepik</a></p>
+			</aside>
+		</main>
+		<div id="snowflakes"></div>
+	
+		<!-- <footer>
+			<p>
+				<small>
+					Copyrights 2018 - PUShAUNE - <a href="mentions_legales.html">Mentions légales</a>
+				</small>
+			</p>
+		</footer> -->
+	</body>
+</html>
