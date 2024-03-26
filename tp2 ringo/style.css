@@ -9,15 +9,15 @@ body, h1, h2, h3, p, ul {
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     line-height: 1.7;
+    background-color: #363434;
 }
 
 header {
-    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     font-size: 28px;
     text-align: center;
-    
+    color: #fffcfc;
 }
 
 main {
